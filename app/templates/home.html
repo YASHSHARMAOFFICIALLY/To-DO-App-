@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %} Welcome {% endblock %}
+{% block content %}
+    <h2> Welcome To my Do App By YASH </h2>
+    <p> Manage for your daily task . We will improve these more in future</p>
+    <p> please <a href = "{{url_for('auth.login' )}}">LOGIN</a> or <a href = "{{url_for('auth.register')}}">Register</a></p>
+{% endblock %}
