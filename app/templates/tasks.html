@@ -16,8 +16,6 @@
                 <th>Task</th>
                 <th>Status</th>
                 <th>Change</th>
-                <th>Added Date</th>
-                <th>Due Date</th>
             </tr>
         </thead>
         <tbody>
@@ -41,7 +39,7 @@
         </tbody>
     </table>
     <form method = "POST" action = "{{ url_for('tasks.clear_tasks' )}}">
-        <button type="submit" class = "btn btn-clear">Clear ALl Task</button>
+        <button type="submit" class = "btn btn-clear">Clear ALL Task</button>
     </form>
     {% else %}
         <p>No task yet. Add one above.</p>

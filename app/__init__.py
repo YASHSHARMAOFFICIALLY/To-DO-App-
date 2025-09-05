@@ -28,9 +28,10 @@ def create_app():
     app.register_blueprint(main_bp)
     return app
 
-from app.model import users
+
 @login_manager.user_loader
 def load_user(user_id):
+    from app.model import users
     return users.query.get(int(user_id))
 
 
